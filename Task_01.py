@@ -9,7 +9,6 @@
 # 1 час 9 мин 13 сек
 # duration = 400153
 # 4 дн 15 час 9 мин 13 сек
-#
 
 duration = int(input('Введите секунды: '))
 minute = 0
@@ -33,3 +32,4 @@ elif minute > 0:
     print(minute,'мин',duration,'сек')
 else:
     print(duration,'сек')
+
