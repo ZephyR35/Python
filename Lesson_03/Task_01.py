@@ -6,5 +6,5 @@ numbers = {'one':'один','two':'два','three':'три','four':'четыре
 number = input('Введите число на английском - ')
 def num_translate(number):
     number = number.lower()
-    print(numbers.get(number,'None'))
-num_translate(number)
+    return numbers.get(number,'None')
+print(num_translate(number))

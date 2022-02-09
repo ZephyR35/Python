@@ -27,16 +27,18 @@ def get_jokes(n,nouns,adverbs,adjectives,repeat = True):
             print(result)
     else:
         while i<=n:
-            first_word = random.choice(lst_copy_1)
-            lst_copy_1.remove(first_word)
-            second_word = random.choice(lst_copy_2)
-            lst_copy_2.remove(second_word)
-            third_word = random.choice(lst_copy_3)
-            lst_copy_3.remove(third_word)
-            result = f'{first_word} {second_word} {third_word}'
-            i+=1
-            print(result)
-
-get_jokes(10,lst_1,lst_2,lst_3)
+            if i > n:
+                break
+            else:
+                first_word = random.choice(lst_copy_1)
+                lst_copy_1.remove(first_word)
+                second_word = random.choice(lst_copy_2)
+                lst_copy_2.remove(second_word)
+                third_word = random.choice(lst_copy_3)
+                lst_copy_3.remove(third_word)
+                result = f'{first_word} {second_word} {third_word}'
+                i+=1
+                print(result)
+get_jokes(6,lst_1,lst_2,lst_3,False)
 
 

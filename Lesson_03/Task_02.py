@@ -8,9 +8,9 @@ def num_translate_adv(number):
     if number[0].isupper():
         number = number.lower()
         result = (numbers.get(number, 'None'))
-        print(result.capitalize())
+        return result.capitalize()
     elif number[0].islower():
         number = number.lower()
         result = (numbers.get(number, 'None'))
-        print(result)
-num_translate_adv(number)
+        return result
+print(num_translate_adv(number))
