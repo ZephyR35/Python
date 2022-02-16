@@ -6,3 +6,7 @@ def iterator_without_yield(n):
     gen_1 = (num for num in range(1,n+1,2) if num**2<200)
     return gen_1
 result = iterator_without_yield(20)
+for number in result:
+    print(number)
+next(result)
+
